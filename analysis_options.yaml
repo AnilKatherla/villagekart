@@ -1,0 +1,121 @@
+#    🚀 Why this is production-grade
+
+#    ✅ Strict type safety (implicit-casts: false, implicit-dynamic: false)
+
+#    ✅ Performance-focused (prefer_const_constructors, prefer_final_fields)
+
+#    ✅ Code hygiene (avoid_unnecessary_containers, require_trailing_commas)
+
+#    ✅ Flutter UI discipline (use_key_in_widget_constructors, sort_child_properties_last)
+
+#    ✅ Enforces maintainable architecture for teams
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+  errors:
+    # Treat these as hard errors
+    missing_return: error
+    missing_required_param: error
+    dead_code: warning
+    unused_import: warning
+    unused_local_variable: warning
+    invalid_use_of_visible_for_testing_member: error
+    always_declare_return_types: warning
+    avoid_print: warning
+    unnecessary_const: warning
+    unnecessary_new: warning
+    prefer_const_constructors: warning
+    prefer_final_fields: warning
+    prefer_const_literals_to_create_immutables: warning
+    prefer_single_quotes: warning
+    use_key_in_widget_constructors: error
+    avoid_unnecessary_containers: warning
+    avoid_empty_else: error
+    avoid_shadowing_type_parameters: error
+    avoid_types_as_parameter_names: error
+    cancel_subscriptions: warning
+    close_sinks: warning
+    empty_statements: error
+    invariant_booleans: warning
+    prefer_is_empty: warning
+    prefer_is_not_empty: warning
+    always_put_control_body_on_new_line: warning
+
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/generated/**"
+    - "lib/generated_plugin_registrant.dart"
+
+linter:
+  rules:
+    # --- Style and Readability ---
+    always_declare_return_types: true
+    always_put_control_body_on_new_line: true
+    always_specify_types: false
+    annotate_overrides: true
+    avoid_classes_with_only_static_members: false
+    avoid_function_literals_in_foreach_calls: true
+    avoid_positional_boolean_parameters: true
+    avoid_print: true
+    avoid_redundant_argument_values: true
+    avoid_returning_null: true
+    avoid_returning_null_for_future: true
+    avoid_returning_null_for_void: true
+    avoid_unnecessary_containers: true
+    camel_case_types: true
+    cascade_invocations: true
+    constant_identifier_names: false
+    curly_braces_in_flow_control_structures: true
+    directives_ordering: true
+    empty_constructor_bodies: true
+    exhaustive_cases: true
+    file_names: true
+    flutter_style_todos: true
+    join_return_with_assignment: true
+    lines_longer_than_80_chars: false
+    no_leading_underscores_for_local_identifiers: false
+    no_logic_in_create_state: true
+    null_closures: true
+    omit_local_variable_types: false
+    one_member_abstracts: false
+    only_throw_errors: true
+    overridden_fields: true
+    package_api_docs: false
+    prefer_adjacent_string_concatenation: true
+    prefer_collection_literals: true
+    prefer_conditional_assignment: true
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_expression_function_bodies: false
+    prefer_final_fields: true
+    prefer_final_in_for_each: true
+    prefer_final_locals: true
+    prefer_foreach: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_single_quotes: true
+    prefer_typing_uninitialized_variables: true
+    provide_deprecation_message: true
+    require_trailing_commas: true
+    sort_child_properties_last: true
+    sort_constructors_first: true
+    sort_unnamed_constructors_first: true
+    type_annotate_public_apis: true
+    unnecessary_await_in_return: true
+    unnecessary_late: true
+    unnecessary_null_checks: true
+    unnecessary_parenthesis: true
+    unnecessary_string_interpolations: true
+    use_full_hex_values_for_flutter_colors: true
+    use_key_in_widget_constructors: true
+    use_rethrow_when_possible: true
+    use_super_parameters: true
+    valid_regexps: true

@@ -1,0 +1,5 @@
+#include "Debug.xcconfig"
+
+FLAVOR=customer
+PRODUCT_BUNDLE_IDENTIFIER=com.villagkartview.customer
+APP_DISPLAY_NAME=Villagkart

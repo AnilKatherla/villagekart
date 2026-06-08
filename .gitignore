@@ -1,0 +1,124 @@
+# =========================================
+# Flutter Production .gitignore
+# For Android, iOS, Web, and Desktop
+# =========================================
+
+#✅ Secure — ignores sensitive files like keys, keystores, and Firebase configs.
+#✅ Cross-platform — covers iOS, Android, Web, macOS, Linux, and Windows.
+#✅ CI/CD friendly — leaves only necessary source files for pipelines.
+#✅ Clean dev setup — ignores IDE and build artifacts to reduce repo size.
+
+
+# Flutter/Dart/Pub
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+coverage_report/
+generated_plugin_registrant.dart
+
+# iOS
+ios/Flutter/.last_build_id
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Pods/
+ios/.symlinks/
+ios/Runner/GeneratedPluginRegistrant.*
+ios/build/
+ios/Runner.xcworkspace/
+ios/Podfile.lock
+ios/Podfile
+ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-*.png
+
+# Android
+android/.gradle/
+android/captures/
+android/gradlew.bat
+android/local.properties
+android/key.properties
+android/app/key.jks
+android/app/google-services.json
+android/build/
+android/app/build/
+
+# VS Code
+.vscode/
+.vscode/settings.json
+.vscode/*.code-workspace
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+*.log
+*.tmp
+.gradle/
+local.properties
+
+# Firebase / Google services
+google-services.json
+GoogleService-Info.plist
+*.keystore
+*.jks
+
+# Environment / Keys
+.env
+.env.*
+*.pem
+*.crt
+*.key
+*.p12
+secrets.json
+api_keys.json
+config_dev.dart
+config_prod.dart
+
+# Build and Cache
+**/build/
+**/DerivedData/
+*.lock
+*.pyc
+*.swp
+*.swo
+*.DS_Store
+*.lockfile
+
+# Logs
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Test outputs
+test_output/
+*.coverage
+coverage/
+lcov.info
+
+# Translations and Generated code
+*.arb.generated.dart
+*.g.dart
+*.freezed.dart
+*.injectable.dart
+
+# Others
+.idea_modules/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-version
+.metadata
+.melos_tool/
+scripts/tmp/
+temp/
+tmp/
+
+#config files- envs
+config/
